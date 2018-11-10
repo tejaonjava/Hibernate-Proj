@@ -96,4 +96,9 @@ public class HibernateService {
 	public List<Salary> moreSalary(String sal) {
 		return salaryRepository.findHighestSal(Double.parseDouble(sal));
 	}
+
+	public List<Salary> lessSalary(String sal) {
+		return salaryRepository.findLessSal(Double.parseDouble(sal));
+	}
+
 }

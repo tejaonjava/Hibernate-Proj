@@ -68,4 +68,11 @@ public class RestCall {
 		System.out.println("inside sal");
 		return hibernateService.moreSalary(sal);
 	}
+
+	@GetMapping("/lessSal/{sal}")
+	public List<Salary> lessSalary(@PathVariable("sal") String sal) {
+		System.out.println("inside less sal");
+		return hibernateService.lessSalary(sal);
+	}
+
 }
